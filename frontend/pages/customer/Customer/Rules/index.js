@@ -1,4 +1,4 @@
-const Rules = ({ ftMetadata, product }) => (
+const Rules = ({ ftMetadata = {}, product = {} }) => (
   <div className=" leading-4 mt-2 overflow-hidden text-left shadow-2xl ring-1 ring-gray-900/5 rounded-lg">
     <div className="px-6 py-4 bg-indigo-500 text-white">
       <h1 className="text-xl">
