@@ -1,4 +1,4 @@
-const BuyWithTokens = ({ canCollect, purchaseWithTokens, product, ftMetadata, buyWithTokensLoader }) => (
+const BuyWithTokens = ({ canCollect, purchaseWithTokens, product = {}, ftMetadata = {}, buyWithTokensLoader }) => (
   <div className=" ">
     <div className="relative overflow-hidden z-0 relative h-full relative bg-white pb-8 shadow-2xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-2xl">
       {!canCollect && <div className="z-10 absolute w-full h-full bg-gray-100 opacity-50"></div>}

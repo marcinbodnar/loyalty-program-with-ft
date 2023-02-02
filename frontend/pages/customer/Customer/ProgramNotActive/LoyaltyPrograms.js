@@ -30,17 +30,18 @@ const LoyaltyPrograms = ({ programsList, wallet }) => (
 
           <p className="text-gray-500 text-xs">
             contract accountId:{' '}
-            <span className="text-sm font-bold text-gray-700">{program.contracts.ft.account_id}</span>
+            <span className="text-sm font-bold text-gray-700">{program?.contracts?.ft?.account_id}</span>
           </p>
           <p className="text-gray-500 text-xs">
-            token name: <span className="text-sm font-bold text-gray-700">{program.contracts.ft.token_name}</span>
+            token name: <span className="text-sm font-bold text-gray-700">{program?.contracts?.ft?.token_name}</span>
           </p>
           <p className="text-gray-500 text-xs">
-            token symbol: <span className="text-sm font-bold text-gray-700">{program.contracts.ft.token_symbol}</span>
+            token symbol:{' '}
+            <span className="text-sm font-bold text-gray-700">{program?.contracts?.ft?.token_symbol}</span>
           </p>
           <p className="text-gray-500 text-xs">
             total supply:{' '}
-            <span className="text-sm font-bold text-gray-700">{program.contracts.ft.token_total_supply}</span>
+            <span className="text-sm font-bold text-gray-700">{program?.contracts?.ft?.token_total_supply}</span>
           </p>
         </div>
       ))}

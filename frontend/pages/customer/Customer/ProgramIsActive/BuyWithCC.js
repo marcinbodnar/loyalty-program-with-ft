@@ -1,4 +1,4 @@
-const BuyWithCC = ({ purchaseWithCC, product, buyWithCCLoader }) => (
+const BuyWithCC = ({ purchaseWithCC, product = {}, buyWithCCLoader }) => (
   <div className="hover:bg-indigo-50 h-full relative bg-white pb-8 shadow-2xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-2xl">
     <div className="px-10 py-10 pb-12 flex-column">
       <h1 className="text-3xl font-bold">{product.name}</h1>
